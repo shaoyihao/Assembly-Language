@@ -21,13 +21,13 @@ main:
             inc BX
     loop s
 ;另一种写法：
-;    s:
+;   s:
 ;	    cmp byte ptr [BX], 8
-;        je eq
+;       je eq
 ;	    jmp ne
-;    eq: inc AX
-;    ne: inc BX
-;    loop s
+;   eq: inc AX
+;   ne: inc BX
+;   loop s
 
     mov AX, 4c00h
     int 21h
