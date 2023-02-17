@@ -15,6 +15,8 @@ start:
     mov DX, DS:[2]
     div word ptr DS:[4]
     mov DS:[6], AX
-
+    
+    mov AX, 4c00h
+    int 21h
 CODE ends
 end start
