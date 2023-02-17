@@ -15,5 +15,7 @@ start:
     mul word ptr DS:[2]  ; 乘数2存储于内存中
     mov DS:[4], AX
 
+    mov AX, 4c00h
+    int 21h
 CODE ends
 end start
