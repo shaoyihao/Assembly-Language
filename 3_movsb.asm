@@ -16,6 +16,8 @@ start:
     mov CX, 16  ; 复制16个字节
     cld         ; 正向
     rep movsb
-
+    
+    mov AX, 4c00h
+    int 21h
 CODE ends
 end start
