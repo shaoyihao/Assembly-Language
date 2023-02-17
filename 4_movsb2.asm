@@ -18,5 +18,7 @@ start:
     std ; 注意此处需要是逆向传送！
     rep movsb
     
+    mov AX, 4c00h
+    int 21h
 code ends
 end start
