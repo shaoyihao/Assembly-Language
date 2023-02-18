@@ -17,9 +17,9 @@ start:
 	
 	mov CX, 8
 	s:
-		mov AX, 0[SI]    ; 0为源数组首地址
-		mov 16[SI], AX   ; 16为目标数组首地址
-		add SI, 2
+	    mov AX, 0[SI]    ; 0为源数组首地址
+	    mov 16[SI], AX   ; 16为目标数组首地址
+	    add SI, 2
 	loop s
 	
 	
