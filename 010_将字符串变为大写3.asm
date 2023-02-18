@@ -9,6 +9,7 @@ data ends
 
 code segment
 main:
+
     mov AX, data
     mov DS, AX
     
