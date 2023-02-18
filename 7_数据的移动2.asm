@@ -18,10 +18,10 @@ start:
 	
 	mov CX, 8
 	s:
-		mov AX, [SI]
-		mov [DI], AX
-		add SI, 2
-		add DI, 2
+	    mov AX, [SI]
+            mov [DI], AX
+	    add SI, 2
+	    add DI, 2
 	loop s
 	
 	
