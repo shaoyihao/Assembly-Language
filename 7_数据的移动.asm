@@ -14,9 +14,9 @@ start:
 	mov BX, 0    ; 使用同一个下标
 	mov CX, 12
 	s:
-		mov DL, DS:[BX]
-		mov ES:[BX], DL
-		inc BX
+	    mov DL, DS:[BX]
+	    mov ES:[BX], DL
+	    inc BX
 	loop s
 	
   
