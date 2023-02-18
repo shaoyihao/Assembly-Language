@@ -8,14 +8,14 @@ main:
     jmp exit
 
 f:	
-	mov CX, 3 ; 此处是求 2 的 3 次幂
-	s:  
-		add AX, AX
+    mov CX, 3 ; 此处是求 2 的 3 次幂
+    s:  
+        add AX, AX
     loop s
     ret  ; 将栈中的数据存入IP，即接下来会跳转到 mov BX, AX
     
 exit:
-	mov AX, 4c00h
+    mov AX, 4c00h
     int 21h
 CODE ends
 end main
