@@ -6,9 +6,12 @@ data ends
 
 code segment
 start:
+
     mov AX, data
     mov DS, AX
+    
     mov SI, 0  ; DS:SI指向字符串的首地址
+    
     s:
         mov CL, [SI]
         mov CH, 0  ;将一个字符(8位)存入 AX 中
