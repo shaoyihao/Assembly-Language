@@ -14,7 +14,7 @@ start:
     
     s:
         mov CL, [SI]
-        mov CH, 0  ;将一个字符(8位)存入 AX 中
+        mov CH, 0  ;将一个字符(8位)存入 AX 中   （这一句好像可以提到前面去）
         jcxz exit  ; 末尾字节为0，当遇到0说明就到了字符串末尾
         and byte ptr [SI], 11011111b ;没到末尾
         inc SI
