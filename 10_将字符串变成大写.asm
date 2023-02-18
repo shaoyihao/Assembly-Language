@@ -15,7 +15,8 @@ start:
 
 f:
     mov CX, 10
-    s:  and byte ptr [SI], 11011111b
+    s:  
+        and byte ptr [SI], 11011111b   ; 巧妙
         inc SI
     loop s
     ret
