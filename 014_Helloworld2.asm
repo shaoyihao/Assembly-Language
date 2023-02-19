@@ -7,9 +7,9 @@ data ends
 code segment
 start:
     mov AX, data
-    ; mov AX, seg str
+    ; mov AX, seg str    获取str所在的段地址
     mov DS, AX
-    mov DX, offset str
+    mov DX, offset str  ;获取str所在的偏移地址 
     ; lea DX, str  ;设置DS:DX的指向
 
     mov AH, 9
