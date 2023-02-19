@@ -1,7 +1,7 @@
 assume CS:code, DS:data
 
 data segment
-    db 'Hello world!', '$'  ; '$'作为字符串结束符
+    db 'Hello world!', '$'     ; '$'作为字符串结束符
 data ends
 
 code segment
@@ -17,7 +17,8 @@ start:
     mov AX, data
     mov DS, AX
     mov DX, 0  ;设置DS:DX的指向
-    mov AH, 9
+    
+    mov AH, 9  ;显示DS:DX所指向的字符串
     int 21h
 
     mov AX, 4c00h
