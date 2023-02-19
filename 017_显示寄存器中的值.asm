@@ -1,3 +1,5 @@
+; 显示 AL 中的数据（以十六进制的形式）
+
 assume CS:code
 
 code segment
@@ -20,15 +22,15 @@ showbyte:
 
     mov BL, AL
     mov BH, 0
-    mov DL, table[BX]
+    mov DL, table[BX] ;将低4位对应的值作为下标，取出对应的字符
     call display
     
     ret
 
 display:
-    push AX
+    push AX    ;会修改AX的值
     mov AH, 2
-    int 21h   ;可能会修改AX的值
+    int 21h  
     pop AX
     ret
 
